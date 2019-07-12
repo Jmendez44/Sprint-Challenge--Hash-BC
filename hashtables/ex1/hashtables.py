@@ -9,14 +9,21 @@ class LinkedPair:
         self.value = value
         self.next = None
 
+    def __repr__(self):
+        return str(self.__dict__)
 
 # '''
 # Resizing hash table
 # '''
+
+
 class HashTable:
     def __init__(self, capacity):
         self.capacity = capacity
         self.storage = [None] * capacity
+
+    def __repr__(self):
+        return str(self.__dict__)
 
 
 # Hash int
@@ -24,7 +31,6 @@ def hash(x, max):
     x = ((x >> 16) ^ x) * 0x45d9f3b
     x = ((x >> 16) ^ x) * 0x45d9f3b
     x = ((x >> 16) ^ x)
-
     return x % max
 
 
