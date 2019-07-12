@@ -33,7 +33,7 @@ def hash(x, max):
     x = ((x >> 16) ^ x)
     return x % max
 
-
+print(hash(6, 5))
 # '''
 # Fill this in.
 
@@ -88,13 +88,14 @@ def hash_table_remove(hash_table, key):
 # '''
 def hash_table_retrieve(hash_table, key):
     index = hash(key, len(hash_table.storage))
-
+    
     current_pair = hash_table.storage[index]
 
     while current_pair is not None:
         if(current_pair.key == key):
             return current_pair.value
         current_pair = current_pair.next
+
 
 
 # '''

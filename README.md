@@ -25,7 +25,7 @@ This sprint challenge is divided up into three parts:  Hash tables (24 points), 
 During your challenge, you will be pulled aside by a PM for a 5 minute interview. During this interview, you will be expected to answer the following three questions:
 
   * 1. What is a blockchain and how does it work?
-  * 2. What is an array and how does it work? an array is a collection of elements 
+  * 2. What is an array and how does it work?
   * 3. What is a hash table and how does it work?
 
 You will receive points at the PM's discretion based on the following criteria:

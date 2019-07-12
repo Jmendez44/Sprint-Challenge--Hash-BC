@@ -8,22 +8,24 @@ from hashtables import (HashTable,
 
 def get_indices_of_item_weights(weights, length, limit):
     ht = HashTable(16)
-    
-    """
-    YOUR CODE HERE
-    """
 
     # Adding all weights to hash table
     for index in range(0, length):
         hash_table_insert(ht, weights[index], index)
-        print('ht', ht)
-    # Check if limit - weights[index] is True, if so we found the solution
-    for index in range(0, length):
-        print('pre', hash_table_retrieve(ht, limit - weights[index]))
+        # print('ht', ht)
 
+    for i in range(length):
+        print('ht', ht)
+        # print('i' ,i)
+        item = limit - weights[i] # 21 - 6 = 15
+        answer = hash_table_retrieve(ht, item) #grabs 15 key returns index 3
+        print(answer)
+        if answer:
+            return (answer, i)
 
     return None
 
+# print(get_indices_of_item_weights([4, 6, 10, 15, 16], 5, 21))
 
 def print_answer(answer):
     if answer is None:
